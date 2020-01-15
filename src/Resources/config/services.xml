@@ -24,8 +24,8 @@
                 <service class="Symfony\Component\Security\Core\User\LdapUserProvider">
                     <argument type="service" id="Symfony\Component\Ldap\Ldap" />
                     <argument>%env(LDAP_USER_QUERY_DN)%</argument>
-                    <argument>%env(LDAP_LOOKUP_DN)%</argument>
-                    <argument>%env(LDAP_PASSWORD)%</argument>
+                    <argument>null</argument>
+                    <argument>null</argument>
                     <argument type="collection">
                         <argument>ROLE_USER</argument>
                     </argument>
